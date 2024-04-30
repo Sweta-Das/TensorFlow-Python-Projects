@@ -24,15 +24,15 @@
 
 - Rank-1 tensor
 
-```python
-r1 = tf.Variable(["Test"], tf.string)
-```
+    ```python
+    r1 = tf.Variable(["Test"], tf.string)
+    ```
 
 - Rank-2 tensor
 
-```python
-r2 = tf.Variable([["hey", "hi"], ["namaste", "hello"]])
-```
+    ```python
+    r2 = tf.Variable([["hey", "hi"], ["namaste", "hello"]])
+    ```
 
 # Shape of Tensors
 
@@ -73,7 +73,6 @@ array([[[1.],
 
 - Variable
 - Constant
-
 - Placeholder
 - SparseTensor
 - With the exception of `Variable` all of these tensors are immutable (their value may not change during execution).
