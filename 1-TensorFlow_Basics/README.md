@@ -22,4 +22,5 @@
 ## Sessions and Execution
 
 - To execute operations in TensorFlow, we need to create a session and run it within a session context.
-- Session manages the execution of the graph and holds the state of variables.
+- Session manages the execution of the graph and holds the state of variables as it is an environment for executing operations defined in a computational graph.
+- Session handles the memory allocation, manages the resources (such as GPUs), and performs the actual computations.
