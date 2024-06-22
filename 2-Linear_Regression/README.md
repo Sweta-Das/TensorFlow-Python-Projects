@@ -9,9 +9,7 @@
 
 - Models the relationship between a single independent var. (X) and a dependent var. (Y).
     
-    $$
-    Y=\beta_0+\beta_1X + \epsilon
-    $$
+    $Y$ = $\beta_0$ + $\beta_1$ $X$ + $\epsilon$
     
     - $Y$: Dependent variable
     - $X$: Independent variable
@@ -23,10 +21,8 @@
 
 - Extends simple linear regression to include multiple independent variables.
     
-    $$
-    Y = \beta_0 + \beta_1X_1 + \beta_2X_2 + ... + \beta_nX_n + \epsilon
-    $$
-    
+    $Y$ = $\beta_0$ + $\beta_1X_1$ + $\beta_2X_2$ + ... + $\beta_nX_n$ + $\epsilon$
+  
     - $X_1, X_2, ..., X_n$: Multiple independent variables
     - $\beta_0, \beta_1, ..., \beta_n$: Coeff. of the model
 
@@ -52,7 +48,7 @@
 
 ### 4. Model Evaluation
 
-- ***R-squared ($R^2$)***: Measures the proportion of variability in the dependent var. explained by the independent vars. Ranges from 0 to 1.
+- ***R-squared*** ($R^2$): Measures the proportion of variability in the dependent var. explained by the independent vars. Ranges from 0 to 1.
 - ***Adjusted R-squared***: Adjusts $R^2$ for the no. of predictors in the model, providing a more accurate measure when multiple predictors are involved.
 - ***Mean Squared Error (MSE)***: Avg. of the squared differences between observed and predicted values.
 - ***Root Mean Squared Error (RMSE)***: Square root of MSE, providing a measure in the same units as the dependent variable.
@@ -64,6 +60,6 @@
 
 ### 6. Diagnostics & Validation
 
-- Residual Plots: Checks for non-random patterns to diagnose issues like non-linearity or heteroscedasticity.
-- Variance Inflation Factor (VIF): Detects multi-collinearity among predictors. High VIF (> 10) indicate multicollinearity.
-- Cross-validation: Splitting the dataset into training and testing sets to evaluate the model’s performance on unseen data.
+- ***Residual Plots***: Checks for non-random patterns to diagnose issues like non-linearity or heteroscedasticity.
+- ***Variance Inflation Factor (VIF)***: Detects multi-collinearity among predictors. High VIF (> 10) indicate multicollinearity.
+- ***Cross-validation***: Splitting the dataset into training and testing sets to evaluate the model’s performance on unseen data.
