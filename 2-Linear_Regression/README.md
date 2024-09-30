@@ -63,3 +63,16 @@
 - ***Residual Plots***: Checks for non-random patterns to diagnose issues like non-linearity or heteroscedasticity.
 - ***Variance Inflation Factor (VIF)***: Detects multi-collinearity among predictors. High VIF (> 10) indicate multicollinearity.
 - ***Cross-validation***: Splitting the dataset into training and testing sets to evaluate the model’s performance on unseen data.
+
+# Summary of Linear Regression
+- It is a common statistical method that allows to learn a function/relationship from a given set of continuous data.
+- The relationship between data (x and y) is called **hypothesis**.
+    - This hypothesis is a straight line in linear regression i.e.,
+          $h(x) = wx+b$ <br>
+      where, $w$ = Weights and $b$ = bias
+    - Both weights and bias are called the *model parameters*.
+- We need to estimate the value of `w` and `b` from the given set of data such that the resultant hypothesis produces the least cost $J$ which is defined as; <br>
+    $J(w, b) = \frac{1}{2m} {\sum_{i=1}}^m (y_i - h(x_i))^2$ <br>
+        where, $m$ = number of data points in the given dataset
+    This cost function is also called as **Mean Squared Error**.
+- For finding the optimized value of parameters for which the cost function ($J$) is min., an optimizer is used called as **Gradient Descent**.
