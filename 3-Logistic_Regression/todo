@@ -1,0 +1,56 @@
+### 3. **Preparing the Dataset**
+   - Choosing a binary classification dataset (e.g., from `sklearn.datasets` or TensorFlow Datasets)
+   - Preprocessing:
+     - Feature scaling / normalization
+     - Handling categorical data (if any)
+     - Train-test split
+
+---
+
+### 4. **Implementing Logistic Regression with TensorFlow**
+   #### A. Using Low-Level TensorFlow (Custom)
+   - Define weights and bias variables
+   - Implement the logistic function manually
+   - Define loss function (binary cross-entropy)
+   - Apply gradient descent (manual or `tf.GradientTape`)
+   - Train using epochs and update weights
+
+   #### B. Using TensorFlow Keras API (High-Level)
+   - Define model with `tf.keras.Sequential`
+   - Use `Dense` layer with sigmoid activation
+   - Compile with:
+     - Loss: `binary_crossentropy`
+     - Optimizer: `adam` or `sgd`
+     - Metrics: `accuracy`
+   - Fit the model with `.fit()`
+
+---
+
+### 5. **Evaluating Model Performance**
+   - Evaluate on test data using `.evaluate()`
+   - Predict class labels with `.predict()`
+   - Metrics:
+     - Accuracy
+     - Precision
+     - Recall
+     - F1-Score
+     - ROC-AUC
+   - Confusion Matrix
+   - Visualization:
+     - ROC curve
+     - Precision-Recall curve
+
+---
+
+### 6. **Hyperparameter Tuning (Optional)**
+   - Learning rate
+   - Epochs
+   - Batch size
+   - Optimizers
+
+---
+
+### 7. **Practical Considerations**
+   - Overfitting and underfitting
+   - Regularization (L1, L2)
+   - Feature importance and model interpretability
