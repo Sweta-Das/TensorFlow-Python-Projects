@@ -17,31 +17,28 @@
 
 - Sigmoid function is used to squash real-valued input into the range (0, 1), making it interpretable as a probability.
 
-    $\sigma(z)$ = $\frac{1}(1+e^{-z})$
+    $\sigma(z)$ = $\frac{1} {(1+e^{-z})}$
 
-    - Here, $z$ = $w^T$$x + b$ (linear combination of inputs and weights)
+    - Here, $z$ = $w^T x + b$ (linear combination of inputs and weights)
     - Output:
         - $\equiv$ 1 → strong confidence in class-1
         - $\equiv$ 0 → strong confidence in class-0
 
 ### Difference between Linear Vs. Logistic Regression
 
-Aspect   |	Linear Regression                     |	Logistic Regression
+Aspect $\space$ $\space$ $\space$ $\space$ $\space$|	Linear Regression                     |	Logistic Regression
 ----------------------------------------------------------------------------
-Output   |	Continuous values (e.g., 3.5, -1.2)	  |   Probabilities (0 to 1)
-Use Case |	Regression problems	                  |   Classification problems
-Activati-|  None                                  |   Sigmoid
-on 
-Function		
-Loss     |  Mean Squared Error (MSE)              |   Binary Cross-Entropy
-Function	
+Output $\space$ $\space$ $\space$ $\space$ $\space$ $\space$ $\space$ $\space$ $\space$ $\space$ $\space$|	Continuous values (e.g., 3.5, -1.2)	  |   Probabilities (0 to 1) </br>
+Use Case $\space$ $\space$ $\space$ $\space$ $\space$ $\space$ $\space$ $\space$ $\space$|	Regression problems $\space$ $\space$ $\space$ $\space$ $\space$ $\space$ $\space$ $\space$ $\space$ $\space$ $\space$ $\space$|   Classification problems </br>
+Activation Function|  None $\space$ $\space$ $\space$ $\space$ $\space$ $\space$ $\space$ $\space$ $\space$ $\space$ $\space$ $\space$ $\space$ $\space$ $\space$ $\space$ $\space$ $\space$ $\space$ $\space$ $\space$ $\space$ $\space$ $\space$ $\space$ $\space$|   Sigmoid </br>		
+Loss Function $\space$ $\space$ $\space$ $\space$ $\space$|  Mean Squared Error (MSE) $\space$ $\space$ $\space$ $\space$ $\space$ $\space$|   Binary Cross-Entropy	
 
 
 ### Mathematical Foundation
 
 1. Logistic (Sigmoid) Function
     
-    $\sigma$$(z)$ = $\frac{1}(1+e^{-z})$, where $z$ = $w^T$ $x$ + $b$
+    $\sigma(z)$ = $\frac{1} {(1+e^{-z})}$, where $z$ = $w^T$ $x$ + $b$
 
     - Converts raw model output `z` into a probability
     - Output lies strictly between 0 and 1.
@@ -52,9 +49,9 @@ Function
 
         $Loss$ = - $[y . log(ŷ) + (1-y) . log(1-ŷ)]$
 
-        where,
-            - `y`: true label (0 or 1)
-            - `ŷ = $\sigma (z)$`: predicted probability
+        where,</br>
+            - y: true label (0 or 1) </br>
+            - ŷ = $\sigma (z)$: predicted probability
 
 3. Gradient Descent in Logistic Regression
  
@@ -63,7 +60,7 @@ Function
         - Compute prediction: $ŷ = \sigma (w^T x + b)$
         - Compute loss using binary cross-entropy
         - Compute gradients of loss w.r.t weights and bias
-        - Update weights:
-            $w := w - \alpha . \frac{\del Loss}{\del w}$
-            $b := b - \alpha . \frac{\del Loss}{\del b}$
+        - Update weights:</br>
+            $w := w - \alpha . \frac{\delta Loss}{\delta w}$ </br>
+            $b := b - \alpha . \frac{\delta Loss}{\delta b}$ </br>
             where, $\alpha$ is the learning rate.
